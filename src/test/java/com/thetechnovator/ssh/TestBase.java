@@ -1,9 +1,8 @@
-package com.dbsystel.devops.remoteutils;
+package com.thetechnovator.ssh;
 
 import java.io.IOException;
+import java.io.InputStream;
 import java.util.Properties;
-
-import com.dbsystel.devops.java.common.utils.FileUtil;
 
 public class TestBase {
 	protected static Properties properties;
@@ -17,7 +16,8 @@ public class TestBase {
 	public static void loadProperties(String fileName) {
 		properties = new Properties();
 		try {
-			properties.load(FileUtil.getInputStemFromClasspathResource(fileName));
+			InputStream is = Thread.currentThread().getContextClassLoader().getResourceAsStream(fileName);
+			properties.load(is);
 			HOST=properties.getProperty("host");
 			USERNAME=properties.getProperty("username");
 			PASSWORD=properties.getProperty("password");

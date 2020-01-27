@@ -1,4 +1,4 @@
-package com.dbsystel.devops.remoteutils;
+package com.thetechnovator.ssh;
 
 import java.util.Date;
 
