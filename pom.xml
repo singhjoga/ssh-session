@@ -17,7 +17,7 @@
 		<commons-lang-version>3.7</commons-lang-version>
 		<commons-io-version>2.6</commons-io-version>
 		<sl4j-version>1.7.25</sl4j-version>
-		<junit-version>4.8.2</junit-version>
+		<junit-version>4.13.1</junit-version>
 		<sshd-version>2.3.0</sshd-version>
 	</properties>
 
